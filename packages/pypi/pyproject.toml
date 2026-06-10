@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sitepulsar-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Stdio launcher for the SitePulsar hosted MCP server — AEO (Agent Experience Optimization) audits measuring how findable, readable, and usable a site is to AI answer engines and autonomous AI agents."
 readme = "README.md"
 requires-python = ">=3.10"

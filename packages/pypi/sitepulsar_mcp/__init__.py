@@ -13,7 +13,7 @@ Most MCP clients can connect to that URL directly. This package exists only to
 help clients that require a local stdio command bridge to the remote endpoint.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 ENDPOINT = "https://mcp.sitepulsar.ai/mcp"
 
