@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "sitepulsar": {
-      "url": "https://sitepulsar-mcp.vercel.app/mcp"
+      "url": "https://mcp.sitepulsar.ai/mcp"
     }
   }
 }

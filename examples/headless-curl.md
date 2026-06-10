@@ -2,7 +2,7 @@
 
 For non-interactive / headless clients that cannot complete an OAuth handshake, authenticate with a Bearer API key minted in the [SitePulsar dashboard](https://www.sitepulsar.ai) (Pro/Business plan).
 
-- **Endpoint (streamable-http):** `https://sitepulsar-mcp.vercel.app/mcp`
+- **Endpoint (streamable-http):** `https://mcp.sitepulsar.ai/mcp`
 - **Auth header (exact):** `Authorization: Bearer <mcp_api_key>`
 
 > The JSON-RPC request bodies below are **illustrative** of the MCP wire shape (initialize → tools/list → tools/call). Streamable-http servers may also require an MCP session header and may stream responses as SSE.
@@ -13,7 +13,7 @@ Replace `$SITEPULSAR_API_KEY` with your key (e.g. `export SITEPULSAR_API_KEY=...
 ## 1. List available tools
 
 ```bash
-curl -sS https://sitepulsar-mcp.vercel.app/mcp \
+curl -sS https://mcp.sitepulsar.ai/mcp \
   -H "Authorization: Bearer $SITEPULSAR_API_KEY" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json, text/event-stream" \
@@ -28,7 +28,7 @@ curl -sS https://sitepulsar-mcp.vercel.app/mcp \
 ## 2. Call a free tool — fast agent-readiness check
 
 ```bash
-curl -sS https://sitepulsar-mcp.vercel.app/mcp \
+curl -sS https://mcp.sitepulsar.ai/mcp \
   -H "Authorization: Bearer $SITEPULSAR_API_KEY" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json, text/event-stream" \
@@ -50,7 +50,7 @@ curl -sS https://sitepulsar-mcp.vercel.app/mcp \
 Start the audit (returns an `audit_id`):
 
 ```bash
-curl -sS https://sitepulsar-mcp.vercel.app/mcp \
+curl -sS https://mcp.sitepulsar.ai/mcp \
   -H "Authorization: Bearer $SITEPULSAR_API_KEY" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json, text/event-stream" \
@@ -70,7 +70,7 @@ curl -sS https://sitepulsar-mcp.vercel.app/mcp \
 Poll for status and the decision-ready summary (substitute the returned `audit_id`):
 
 ```bash
-curl -sS https://sitepulsar-mcp.vercel.app/mcp \
+curl -sS https://mcp.sitepulsar.ai/mcp \
   -H "Authorization: Bearer $SITEPULSAR_API_KEY" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json, text/event-stream" \

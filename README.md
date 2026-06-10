@@ -2,13 +2,13 @@
 
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-ai.sitepulsar%2Fmcp-blue)](https://www.sitepulsar.ai/llms.txt)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Transport: streamable-http](https://img.shields.io/badge/transport-streamable--http-purple)](https://sitepulsar-mcp.vercel.app/mcp)
+[![Transport: streamable-http](https://img.shields.io/badge/transport-streamable--http-purple)](https://mcp.sitepulsar.ai/mcp)
 
 > Agent Experience Optimization (AEO) for AI agents — measure and improve how findable, readable, and usable any website is to AI answer engines and autonomous AI agents, directly from your MCP client.
 
 A **remote, hosted** [Model Context Protocol](https://modelcontextprotocol.io) server. There is nothing to build or run locally — connect your MCP client to the hosted endpoint and the 13 tools below become available.
 
-**Endpoint (streamable-http):** `https://sitepulsar-mcp.vercel.app/mcp`
+**Endpoint (streamable-http):** `https://mcp.sitepulsar.ai/mcp`
 
 ---
 
@@ -32,8 +32,8 @@ The server supports two auth modes. Pick whichever fits your client.
 
 Add SitePulsar as a **custom connector** in Claude using the endpoint. Claude walks you through the OAuth handshake; no API key needs to be stored.
 
-- **Endpoint:** `https://sitepulsar-mcp.vercel.app/mcp`
-- **OAuth protected-resource metadata:** `https://sitepulsar-mcp.vercel.app/.well-known/oauth-protected-resource`
+- **Endpoint:** `https://mcp.sitepulsar.ai/mcp`
+- **OAuth protected-resource metadata:** `https://mcp.sitepulsar.ai/.well-known/oauth-protected-resource`
 
 ### Option B — Bearer API key (for headless / non-interactive clients)
 
@@ -51,8 +51,8 @@ See [`examples/headless-curl.md`](./examples/headless-curl.md) for raw HTTP usag
 
 | Client | How to connect |
 | --- | --- |
-| **Claude (desktop / web)** | Settings → Connectors → Add custom connector → paste `https://sitepulsar-mcp.vercel.app/mcp`, then complete OAuth. |
-| **Claude Code (CLI)** | `claude mcp add --transport http sitepulsar https://sitepulsar-mcp.vercel.app/mcp` |
+| **Claude (desktop / web)** | Settings → Connectors → Add custom connector → paste `https://mcp.sitepulsar.ai/mcp`, then complete OAuth. |
+| **Claude Code (CLI)** | `claude mcp add --transport http sitepulsar https://mcp.sitepulsar.ai/mcp` |
 | **Cursor / Cline (JSON config)** | Add to your MCP config: see below. |
 
 Cursor / Cline JSON config:
@@ -61,7 +61,7 @@ Cursor / Cline JSON config:
 {
   "mcpServers": {
     "sitepulsar": {
-      "url": "https://sitepulsar-mcp.vercel.app/mcp"
+      "url": "https://mcp.sitepulsar.ai/mcp"
     }
   }
 }
@@ -106,7 +106,7 @@ SitePulsar accepts either of the following on the hosted endpoint.
 Used by interactive clients (e.g. Claude custom connectors). The server advertises its OAuth posture via RFC 9728 protected-resource metadata:
 
 ```
-https://sitepulsar-mcp.vercel.app/.well-known/oauth-protected-resource
+https://mcp.sitepulsar.ai/.well-known/oauth-protected-resource
 ```
 
 Your client discovers the authorization server from that document and completes the handshake — no API key is stored on your side.
@@ -127,8 +127,8 @@ Metered tools (`run_audit`, `scan_visibility`, and the metered path of `scan_pro
 
 - Website: <https://www.sitepulsar.ai>
 - Tool reference (llms.txt): <https://www.sitepulsar.ai/llms.txt>
-- Hosted MCP endpoint: `https://sitepulsar-mcp.vercel.app/mcp`
-- OAuth metadata: `https://sitepulsar-mcp.vercel.app/.well-known/oauth-protected-resource`
+- Hosted MCP endpoint: `https://mcp.sitepulsar.ai/mcp`
+- OAuth metadata: `https://mcp.sitepulsar.ai/.well-known/oauth-protected-resource`
 - Listed in the official MCP registry as `ai.sitepulsar/mcp` (v1.0.0).
 
 ---

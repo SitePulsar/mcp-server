@@ -4,7 +4,7 @@ Thanks for your interest in SitePulsar's MCP server.
 
 ## This server is hosted
 
-SitePulsar runs as a **remote, hosted** MCP server at `https://sitepulsar-mcp.vercel.app/mcp`. There is no local build or runtime in this repository — clients connect to the hosted endpoint. As a result, contributions here are about **documentation, examples, and connection ergonomics**, plus feedback that shapes the hosted tool surface.
+SitePulsar runs as a **remote, hosted** MCP server at `https://mcp.sitepulsar.ai/mcp`. There is no local build or runtime in this repository — clients connect to the hosted endpoint. As a result, contributions here are about **documentation, examples, and connection ergonomics**, plus feedback that shapes the hosted tool surface.
 
 <!-- TODO(gijs): if/when server source is open-sourced from the private `sitepulsar-mcp` repo, add a "Local development" section here with build/run/test steps. -->
 

@@ -7,7 +7,7 @@ AI agents, returning one Agent Readiness Score across three pillars
 
 The SitePulsar MCP server is REMOTE (streamable-http) at:
 
-    https://sitepulsar-mcp.vercel.app/mcp
+    https://mcp.sitepulsar.ai/mcp
 
 Most MCP clients can connect to that URL directly. This package exists only to
 help clients that require a local stdio command bridge to the remote endpoint.
@@ -15,6 +15,6 @@ help clients that require a local stdio command bridge to the remote endpoint.
 
 __version__ = "0.1.0"
 
-ENDPOINT = "https://sitepulsar-mcp.vercel.app/mcp"
+ENDPOINT = "https://mcp.sitepulsar.ai/mcp"
 
 __all__ = ["__version__", "ENDPOINT"]

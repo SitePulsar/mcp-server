@@ -22,7 +22,7 @@ pip install sitepulsar-mcp
 ## The remote endpoint
 
 ```
-https://sitepulsar-mcp.vercel.app/mcp
+https://mcp.sitepulsar.ai/mcp
 ```
 
 Authenticate with **OAuth** (the connector flow, no key) or a **Bearer API key**
@@ -40,7 +40,7 @@ Point your client straight at the endpoint — no package required:
 {
   "mcpServers": {
     "sitepulsar": {
-      "url": "https://sitepulsar-mcp.vercel.app/mcp"
+      "url": "https://mcp.sitepulsar.ai/mcp"
     }
   }
 }
@@ -56,7 +56,7 @@ Until the native bridge lands, use the Node `mcp-remote` proxy as the stdio
 bridge:
 
 ```bash
-npx mcp-remote https://sitepulsar-mcp.vercel.app/mcp
+npx mcp-remote https://mcp.sitepulsar.ai/mcp
 ```
 
 or the SitePulsar npm launcher (same effect):
@@ -72,7 +72,7 @@ Example stdio client config:
   "mcpServers": {
     "sitepulsar": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://sitepulsar-mcp.vercel.app/mcp"]
+      "args": ["-y", "mcp-remote", "https://mcp.sitepulsar.ai/mcp"]
     }
   }
 }

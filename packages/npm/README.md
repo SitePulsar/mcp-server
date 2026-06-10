@@ -19,7 +19,7 @@ If your MCP client supports remote/streamable-http servers directly
 (e.g. the Claude Desktop connector UI, Cursor), just point it at:
 
 ```
-https://sitepulsar-mcp.vercel.app/mcp
+https://mcp.sitepulsar.ai/mcp
 ```
 
 Authenticate with **OAuth** (the connector flow, no key) or a **Bearer API key**
@@ -39,7 +39,7 @@ npx @sitepulsar/mcp-server
 ```
 
 This starts a stdio MCP server that proxies to
-`https://sitepulsar-mcp.vercel.app/mcp`, with OAuth handled by `mcp-remote`.
+`https://mcp.sitepulsar.ai/mcp`, with OAuth handled by `mcp-remote`.
 
 ### Example client config
 

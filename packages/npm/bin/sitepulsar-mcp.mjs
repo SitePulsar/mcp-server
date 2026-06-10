@@ -23,7 +23,7 @@
 import { spawn } from "node:child_process";
 import { createRequire } from "node:module";
 
-const ENDPOINT = "https://sitepulsar-mcp.vercel.app/mcp";
+const ENDPOINT = "https://mcp.sitepulsar.ai/mcp";
 
 // Forward every CLI arg after our own invocation to mcp-remote.
 const forwardedArgs = process.argv.slice(2);
