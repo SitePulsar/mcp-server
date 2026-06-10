@@ -1,0 +1,45 @@
+{
+  "name": "@sitepulsar/mcp-server",
+  "version": "0.1.0",
+  "description": "Stdio launcher for the SitePulsar hosted MCP server — AEO (Agent Experience Optimization) audits that measure how findable, readable, and usable a site is to AI answer engines and autonomous AI agents. Bridges local stdio MCP clients to the hosted streamable-http endpoint.",
+  "type": "module",
+  "bin": {
+    "sitepulsar-mcp": "bin/sitepulsar-mcp.mjs"
+  },
+  "files": [
+    "bin/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mcp-remote": "^0.1.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "agent-infrastructure",
+    "agent-readiness",
+    "aeo",
+    "ai-visibility",
+    "answer-engine-optimization",
+    "claude",
+    "anthropic"
+  ],
+  "author": "Gijs van Bueren / SitePulsar <info@sitepulsar.ai> (https://www.sitepulsar.ai)",
+  "license": "MIT",
+  "homepage": "https://www.sitepulsar.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SitePulsar/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SitePulsar/mcp-server/issues",
+    "email": "info@sitepulsar.ai"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
