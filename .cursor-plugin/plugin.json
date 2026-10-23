@@ -1,0 +1,14 @@
+{
+  "name": "sitepulsar",
+  "version": "1.0.0",
+  "description": "AEO agent-readiness audits — FIND/READ/USE scores and prioritized fixes for any website via SitePulsar MCP.",
+  "author": {
+    "name": "SitePulsar",
+    "email": "info@sitepulsar.ai"
+  },
+  "homepage": "https://www.sitepulsar.ai",
+  "repository": "https://github.com/SitePulsar/mcp-server",
+  "license": "MIT",
+  "keywords": ["aeo", "mcp", "agent-readiness", "website-audit", "seo"],
+  "logo": "assets/logo.png"
+}
